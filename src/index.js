@@ -1,11 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+//import {  Route, Link, BrowserRouter as Router  } from 'react-router-dom';
 import './index.css';
-import NavigationBar from './components/navBar';
-  class Home extends React.Component {
+//import About from './components/About/about';
+import NavigationBar from './components/navBar/navBar';
+import Home from './components/home/home';
+  class App extends React.Component {
+
+    
     render() {
       return (
-        <NavigationBar />
+        <div>
+          <NavigationBar/>
+          <main>
+              <Home/>
+          </main>
+          </div>
       );
     }
   }
@@ -13,7 +23,7 @@ import NavigationBar from './components/navBar';
   // ========================================
   
   ReactDOM.render(
-    <Home />,
+    <App />,
     document.getElementById('root')
   );
   
