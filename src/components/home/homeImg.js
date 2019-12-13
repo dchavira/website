@@ -1,5 +1,5 @@
 import React from 'react';
-import './homeImg.css';
+import './home.css';
 class HomeImg extends React.Component{
     
     render(){

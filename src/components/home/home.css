@@ -1,0 +1,41 @@
+.concert{
+    width: 100%;
+    max-width:100% !important;
+    height:auto;
+    float: left;
+    margin:0;
+    display: flex;
+    position: static;
+}
+h1{
+    font: 4.5vw/5.375vw Myriad Arabic !important;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    color:white;
+    margin: 10% 0% -10% 8%;
+    text-shadow: 0px 2px rgb(202, 202, 202);
+}
+p{
+    color:black;
+    font-family: Myriad Arabic !important;
+    font-size:calc(4vh + 1.5vw);
+    margin: 0% 0% 0% 8%;
+    text-shadow: none;
+    display: inline-block;
+    line-height: 10vh;
+    position: relative;
+    width: 60%;
+    height: auto;
+}
+.Message{
+    color:black;
+    font: Bold 104px/104px Myriad Arabic !important;
+    margin: 0% 0% 0% 8%;
+    padding-top: 1em;
+    text-shadow: none;
+    position: sticky;
+    
+}
