@@ -1,20 +1,47 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import {  Route, Link, BrowserRouter as Router  } from 'react-router-dom';
 import './index.css';
-//
-import NavigationBar from './components/navBar/navBar';
-  class App extends React.Component {
+import About from './components/About/about'
+import Projects from './components/Projects/projects';
+import Contact from './components/Contact/contact';
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
+import Home from './components/home/home'
+import NavigationBar from './components/navBar/navBar';
+
+  class App extends React.Component {
     
+    state = {
+      toggle: false
+    }
+    Toggle = () => {
+        this.setState({ toggle: !this.state.toggle })
+    }
     render() {
+      console.log(this.props.location);
+    
       return (
-        <div>
-          <NavigationBar/>
-          <main>
-              
-          </main>
-          </div>
+        
+        <Router>
+            <NavigationBar/>
+            <Switch>
+                <Route exact path ="/" component={NavigationBar, Home}/>
+                  
+                <Route path="/home">
+                    <Home />
+                </Route>
+                <Route path="/about">
+                    <About />
+                </Route>
+                <Route path="/projects">
+                    <Projects />
+                </Route>
+                <Route path="/contact">
+                    <Contact />
+                </Route>
+            </Switch>
+            
+        </Router>
       );
     }
   }
@@ -22,6 +49,7 @@ import NavigationBar from './components/navBar/navBar';
   // ========================================
   
   ReactDOM.render(
+    
     <App />,
     document.getElementById('root')
   );

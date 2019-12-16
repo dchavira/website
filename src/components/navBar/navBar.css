@@ -1,7 +1,6 @@
 ul{
     list-style: none;
     float:right;
-    background-color: black;
     margin: 0% 2% -2% 0%;
 }
 li{
@@ -19,21 +18,21 @@ button{
     cursor: pointer;
     outline: none;
     float: right;
-    margin-top:2.5%;
+    margin-bottom:2%;
 }
 nav{
-    background-color: black;
-    font: Bold 2.5em/3.375em Myriad Arabic; 
+    font:  2.5em/3.375em Myriad Arabic; 
     width: 100%;
     height: auto;
     overflow: hidden;
+    position: absolute;
 }
 a{
     text-decoration: none;
     color:white;
 }
 a:hover{
-    color: red;
+    background-color: gray;
 }
 a.active{
     color:red;

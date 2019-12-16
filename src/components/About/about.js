@@ -5,8 +5,8 @@ class About extends React.Component{
     render(){
         
         return(
-            <h1>
-            About
+            <h1 className="resumeHead">
+            Resume
             </h1>
         );
             

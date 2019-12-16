@@ -21,7 +21,7 @@ class NavigationBar extends React.Component {
             },
             {
                 link: "/about",
-                text: "About"
+                text: "Resume"
             },
             {
                 link: "/projects",
@@ -34,9 +34,9 @@ class NavigationBar extends React.Component {
             }
         ]
         return (
-            <Router>
+            
             <nav>
-                <Link to="/"><img src="./img/Logo Transparent.png" alt="Logo" ></img></Link>
+                <Link to="/home"><img src="./img/Logo Transparent.png" alt="Logo" ></img></Link>
                 <button onClick={this.Toggle}>
                     <FaAlignJustify />
                 </button>
@@ -50,23 +50,6 @@ class NavigationBar extends React.Component {
                 </ul>
                 
             </nav>
-            <Switch>
-                <Route path="/home">
-                    <Home />
-                </Route>
-                <Route path="/about">
-                    <About />
-                </Route>
-                <Route path="/projects">
-                    <Projects />
-                </Route>
-                <Route path="/contact">
-                    <Contact />
-                </Route>
-            </Switch>
-            
-            </Router>
-            
             );
 
 
