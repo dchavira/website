@@ -10,7 +10,6 @@ import Home from './components/home/home'
 import NavigationBar from './components/navBar/navBar';
 
   class App extends React.Component {
-    
     state = {
       toggle: false
     }
@@ -18,14 +17,15 @@ import NavigationBar from './components/navBar/navBar';
         this.setState({ toggle: !this.state.toggle })
     }
     render() {
-      console.log(this.props.location);
+      
     
       return (
-        
         <Router>
             <NavigationBar/>
+            
             <Switch>
-                <Route exact path ="/" component={NavigationBar, Home}/>
+              {// eslint-disable-next-line
+              }<Route exact path ="/" component={NavigationBar,Home}/>
                   
                 <Route path="/home">
                     <Home />

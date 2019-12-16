@@ -60,6 +60,10 @@ img{
     }
     li{
         padding: 10px 25px 10px 10px;
+        
+    }
+    a:hover{
+        background-color:gray;
     }
 }
 @media screen and (max-width: 767){
@@ -71,6 +75,7 @@ img{
         display:none;
     }
     img{
+        display: none;
         width:13%;
         max-width:2em;
         min-width: 1.5em;
