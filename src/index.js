@@ -4,6 +4,7 @@ import './index.css';
 import About from './components/About/about'
 import Projects from './components/Projects/projects';
 import Contact from './components/Contact/contact';
+import NotFound from './components/NotFound/NotFound';
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import Home from './components/home/home'
@@ -26,7 +27,7 @@ import NavigationBar from './components/navBar/navBar';
             <Switch>
               {// eslint-disable-next-line
               }<Route exact path ="/" component={NavigationBar,Home}/>
-                  
+                
                 <Route path="/home">
                     <Home />
                 </Route>
@@ -39,6 +40,8 @@ import NavigationBar from './components/navBar/navBar';
                 <Route path="/contact">
                     <Contact />
                 </Route>
+                {// eslint-disable-next-line
+              }<Route component={NotFound}/>
             </Switch>
             
         </Router>

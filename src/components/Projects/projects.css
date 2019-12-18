@@ -1,7 +1,14 @@
 div{
     font-size: 14px;
+    display: block;
 }
 .projectsHead{
     color:black;
+    font:  104px/104px Myriad Arabic !important;
+    text-shadow: none;
+    z-index: -1;
+    position: absolute;
 }
-
+.projectLink{
+    color:blue;
+}

@@ -5,7 +5,7 @@
     float: left;
     margin:0;
     display: flex;
-    position: static;
+    position: relative;
 }
 h1{
     font: 4.5vw/5.375vw Myriad Arabic !important;

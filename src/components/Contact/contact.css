@@ -1,7 +1,25 @@
 div{
     font-size: 14px;
+    display: block;
 }
 .contactHead{
     color:black;
+    font:  104px/104px Myriad Arabic !important;
+    text-shadow: none;
+    z-index: -1;
+    position: absolute;
 }
-
+form{
+    position:relative;
+    padding: 20% 0% 0% 40%;
+    overflow: hidden;
+    
+}
+input{
+    margin: 2% 0% 0% 0%;
+    padding:12px 20px;
+    color:black;
+    border-radius: 7%;
+    display: block;
+    height: 50px;
+}

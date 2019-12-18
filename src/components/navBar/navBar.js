@@ -22,7 +22,15 @@ class NavigationBar extends React.Component {
     }
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll, { passive: true })
-        
+        const vJSLoc= window.location.pathname;
+        console.log(vJSLoc)
+        if(vJSLoc!=="/" && this.state.onHome){
+            this.toggleOnHome()
+        }
+        //if the page is not home but going home, this is false turning off black style;
+        if(vJSLoc==="/" && !this.state.onHome){
+            this.toggleOnHome()  
+        }
     }
 
     componentWillUnmount() {
@@ -41,15 +49,16 @@ class NavigationBar extends React.Component {
     }
     
     componentDidUpdate(){
+            
             const currentLoc = this.props.location.pathname;
+            
             //if the page is home but leaving it, this is now true and turns on black style
             if(currentLoc!=="/" && this.state.onHome){
                 this.toggleOnHome()
             }
             //if the page is not home but going home, this is false turning off black style;
             if(currentLoc==="/" && !this.state.onHome){
-                this.toggleOnHome()
-                
+                this.toggleOnHome()  
             }
         }
     
@@ -79,7 +88,7 @@ class NavigationBar extends React.Component {
         return (
 
             <nav  onScroll={this.handleScroll} className={this.state.scrolled||!this.state.onHome ? "scrolled":null}>
-                <Link to="/home"><img className="logo" src="./img/Logo Transparent.png" alt="Logo" ></img></Link>
+                <Link to="/"><img className="logo" src="./img/Logo Transparent.png" alt="Logo" ></img></Link>
                 <button onClick={this.Toggle}>
                     <FaAlignJustify />
                 </button>

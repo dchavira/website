@@ -3,4 +3,8 @@ div{
 }
 .resumeHead{
     color:black;
+    font:  104px/104px Myriad Arabic !important;
+    text-shadow: none;
+    z-index: -1;    
+    position: absolute;
 }
