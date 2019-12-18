@@ -1,25 +1,28 @@
 import React from 'react';
 import './navBar.css';
 import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
 import { FaAlignJustify } from 'react-icons/fa';
 class NavigationBar extends React.Component {
     state = {
         toggle: false,
-        scrolled: false
+        scrolled: false,
+        onHome:true
     }
-    constructor(props){
-        super(props);
-        this.handleScroll= this.handleScroll.bind(this);
-    }
+    
     Toggle = () => {
         this.setState({ toggle: !this.state.toggle })
     }
     toggleScroll =() =>{
-        this.setState({ scrolled: !this.state.scrolled});
+        this.setState({ scrolled: !this.state.scrolled})
         
+    }
+    toggleOnHome=()=>{
+        this.setState({onHome: !this.state.onHome})
     }
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll, { passive: true })
+        
     }
 
     componentWillUnmount() {
@@ -27,18 +30,30 @@ class NavigationBar extends React.Component {
     }
 
     handleScroll = event => {
-        // do something at end of scroll
-        let element=event.target;
-        
+        // if user scrolls down, add black background color to nav
         if(!this.state.scrolled){
             this.toggleScroll()
-        }if(window.pageYOffset===0 && this.state.scrolled){
+        }
+        //if scroll is at top of page, remove black style
+        if(window.pageYOffset===0 && this.state.scrolled){
             this.toggleScroll()
-            console.log(window.pageYOffset)
-            
-            
         }
     }
+    
+    componentDidUpdate(){
+            const currentLoc = this.props.location.pathname;
+            //if the page is home but leaving it, this is now true and turns on black style
+            if(currentLoc!=="/" && this.state.onHome){
+                this.toggleOnHome()
+            }
+            //if the page is not home but going home, this is false turning off black style;
+            if(currentLoc==="/" && !this.state.onHome){
+                this.toggleOnHome()
+                
+            }
+        }
+    
+    
 
     render() {
         const li = [
@@ -61,22 +76,17 @@ class NavigationBar extends React.Component {
             }
         ]
 
-        const currentLoc = window.location.pathname;
-
-
-
         return (
 
-            <nav  onScroll={this.handleScroll} className={this.state.scrolled ? "scrolled":null}>
-                {//<li className={text === 'foo' ? styles.class1 : styles.class2 } .../>
-                }<Link to="/home"><img className="logo" src="./img/Logo Transparent.png" alt="Logo" ></img></Link>
+            <nav  onScroll={this.handleScroll} className={this.state.scrolled||!this.state.onHome ? "scrolled":null}>
+                <Link to="/home"><img className="logo" src="./img/Logo Transparent.png" alt="Logo" ></img></Link>
                 <button onClick={this.Toggle}>
                     <FaAlignJustify />
                 </button>
                 <ul className={this.state.toggle ? "nav-links show-nav" : "nav-links"}>
                     {
                         li.map((objLink, i) => {
-                            return (<li key={i} ><Link to={objLink.link} style={{ color: currentLoc === "/" ? "white" : "black" }}>{objLink.text}</Link></li>)
+                            return (<li key={i} ><Link to={objLink.link}>{objLink.text}</Link></li>)
                         })
                     }
 
@@ -89,4 +99,4 @@ class NavigationBar extends React.Component {
 
     }
 }
-export default NavigationBar;
+export default withRouter(NavigationBar);
