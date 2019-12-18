@@ -25,7 +25,7 @@ nav{
     width: 100%;
     height: auto;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
 }
 a{
     text-decoration: none;
@@ -48,6 +48,10 @@ img{
     list-style-type:none;
     font-weight: bold;
 }
+.scrolled{
+    background-color: black;
+}
+
 @media screen and (min-width: 768){
     
     button{
