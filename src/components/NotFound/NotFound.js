@@ -12,7 +12,6 @@ class NotFound extends React.Component{
             
             <h1 style={this.hStyle}>
                 Sorry, we couldn't find that page :( <br />
-                <a href="/" style={this.aStyle}>Go Home</a>
             </h1>
         );
             

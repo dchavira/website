@@ -3,15 +3,22 @@ import './contact.css'
 class Contact extends React.Component {
     nameValue="";
     messageValue=""
+    emailValue=""
     constructor(props) {
         // ...
         super(props)
         this.changeNameText = this.changeNameText.bind(this);
         this.changeMessageText = this.changeMessageText.bind(this);
+        this.changeEmailText = this.changeEmailText.bind(this);
       }
     changeNameText(event){
         this.setState(
             {nameValue : event.target.value}
+        )
+    }
+    changeEmailText(event){
+        this.setState(
+            {emailValue : event.target.value}
         )
     }
     changeMessageText(event){
@@ -23,8 +30,11 @@ class Contact extends React.Component {
 
         return (
             <div>
+                
                 <h1 className='contactHead'>Contact </h1>
                 <form>
+                    <br/>
+                    Name
                     <input
                         type='text'
                         name='name'
@@ -32,13 +42,26 @@ class Contact extends React.Component {
                         //value={this.nameValue}
                         onChange ={this.changeNameText}
                     />
+                    <br/>
+                    Email
+                    <input
+                        type='text'
+                        name='email'
+                        placeholder="something@mail.com"
+                        //value={this.messageValue}
+                        onChange={this.changeEmailText}
+                    />
+                    <br/>
+                    Enter message:
                     <input
                         type='text'
                         name='age'
+                        className="messageBox"
                         placeholder="Say something!"
                         //value={this.messageValue}
                         onChange={this.changeMessageText}
-                    />
+                        
+                    /><br/>
                 </form>
             </div>
         );

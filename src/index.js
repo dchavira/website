@@ -5,6 +5,7 @@ import About from './components/About/about'
 import Projects from './components/Projects/projects';
 import Contact from './components/Contact/contact';
 import NotFound from './components/NotFound/NotFound';
+import Footer from './components/Footer/footer';
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import Home from './components/home/home'
@@ -40,10 +41,12 @@ import NavigationBar from './components/navBar/navBar';
                 <Route path="/contact">
                     <Contact />
                 </Route>
+                <Route path='/linkedIn' component={() => window.location = ' https://www.linkedin.com/in/damian-chavira-a45886141'}/>
+              <Route path='/git' component={() => window.location = 'https://www.github.com/dchavira'}/>
                 {// eslint-disable-next-line
               }<Route component={NotFound}/>
             </Switch>
-            
+            <Footer />
         </Router>
       );
     }

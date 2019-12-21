@@ -11,15 +11,24 @@ div{
 }
 form{
     position:relative;
-    padding: 20% 0% 0% 40%;
+    padding: 20% 0% 0% 8%;
     overflow: hidden;
+    font:  4vw/5vw Myriad Arabic;
+    
     
 }
 input{
     margin: 2% 0% 0% 0%;
-    padding:12px 20px;
+    padding:15px 20px;
     color:black;
-    border-radius: 7%;
+    border-radius: 15px;
     display: block;
+    height: 12px;
+    font-size: 24px;
+    width:62%;
+}
+.messageBox{
     height: 50px;
+    padding-top:10px;
+    
 }
