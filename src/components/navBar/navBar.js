@@ -23,7 +23,6 @@ class NavigationBar extends React.Component {
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll, { passive: true })
         const vJSLoc= window.location.pathname;
-        console.log(vJSLoc)
         if(vJSLoc!=="/" && this.state.onHome){
             this.toggleOnHome()
         }

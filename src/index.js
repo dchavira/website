@@ -18,6 +18,10 @@ import NavigationBar from './components/navBar/navBar';
     Toggle = () => {
         this.setState({ toggle: !this.state.toggle })
     }
+    fStyle={
+      position:"relative"
+    }
+    
     render() {
       
     

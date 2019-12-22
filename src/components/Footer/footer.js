@@ -7,7 +7,7 @@ class Footer extends React.Component{
         
         return(
             
-            <footer style={this.fStyle}>
+            <footer>
                 <ul className="icons">
                     <li><a href="/git" target="_blank"><FaGithub /></a></li>
                     <li><a href="/linkedIn" target="_blank"><FaLinkedin /></a></li>

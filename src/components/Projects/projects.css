@@ -12,3 +12,29 @@ div{
 .projectLink{
     color:blue;
 }
+.projLinks{
+    padding:0;
+    
+}
+.projList{
+    float: none;
+    margin: 0% 0% 0% 8%;
+    position:static;
+    padding:0% 0% 0% 0%;
+    width:60%;
+    
+}
+@media screen and (max-width: 767){
+    .projList{
+        display: block;
+        float: none;
+        margin: 0% 0% 0% 8%;
+        position:relative;
+        padding:0% 0% 0% 0%;
+        width:37%;
+    }
+    .projLinks{
+        padding:"0";
+        display:"block";
+    }
+}

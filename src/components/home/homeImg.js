@@ -11,7 +11,7 @@ class HomeImg extends React.Component{
         
         return(
             <div>
-            <h1 style ={this.nameStyle}>Damian Chavira</h1>
+            <h1 style ={this.nameStyle} id="name">Damian Chavira</h1>
             <img className='concert' src='./img/concert4k dark.jpg' alt='Solo Concert' style={this.imgStyle}></img>
             </div>
         );

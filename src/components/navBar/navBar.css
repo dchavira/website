@@ -3,6 +3,17 @@ ul{
     float:right;
     margin: 0% 2% -2% 0%;
     position: relative;
+    
+}
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateY(0%);
+    }
 }
 li{
     font-size: 50px;
@@ -27,6 +38,7 @@ nav{
     overflow: hidden;
     position: fixed;
     z-index:1;
+    animation: fade-up .5s linear;
 }
 a{
     text-decoration: none;
@@ -49,6 +61,16 @@ img{
 }
 .scrolled{
     background-color: black;
+    animation: fade .5s linear;
+    
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 
 @media screen and (min-width: 768){

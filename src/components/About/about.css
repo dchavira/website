@@ -1,5 +1,6 @@
 div{
     font-size: 14px;
+    display: block;
 }
 .resumeHead{
     color:black;
@@ -7,4 +8,9 @@ div{
     text-shadow: none;
     z-index: -1;    
     position: absolute;
+}
+.resumeP{
+    position: static;
+    padding-top: 4%;
+    margin: 14% 0% 0% 8%;
 }
