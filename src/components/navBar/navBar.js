@@ -2,7 +2,7 @@ import React from 'react';
 import './navBar.css';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import { FaAlignJustify } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 class NavigationBar extends React.Component {
     state = {
         toggle: false,
@@ -89,7 +89,7 @@ class NavigationBar extends React.Component {
             <nav  onScroll={this.handleScroll} className={this.state.scrolled||!this.state.onHome ? "scrolled":null}>
                 <Link to="/"><img className="logo" src="./img/Logo Transparent.png" alt="Logo" ></img></Link>
                 <button onClick={this.Toggle}>
-                    <FaAlignJustify />
+                    <FaBars />
                 </button>
                 <ul className={this.state.toggle ? "nav-links show-nav" : "nav-links"}>
                     {

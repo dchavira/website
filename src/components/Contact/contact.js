@@ -55,13 +55,15 @@ class Contact extends React.Component {
                     Enter message:
                     <input
                         type='text'
-                        name='age'
+                        name='message'
                         className="messageBox"
                         placeholder="Say something!"
                         //value={this.messageValue}
                         onChange={this.changeMessageText}
                         
                     /><br/>
+                    <button className="submit" onClick="">Send Message</button>
+                    <br/>
                 </form>
             </div>
         );
