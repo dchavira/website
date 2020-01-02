@@ -2,15 +2,75 @@ div{
     font-size: 14px;
     display: block;
 }
+dl{
+    display: inline-block;
+    margin:0% 0% 6% 8%;
+}
+.subList{
+    margin-left: 20%;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    column-count: 1;
+    height: auto;
+}
+dt{
+    font:  54px/56px Myriad Arabic;
+    max-width: 100%;
+}
+dd{
+    font: 34px/36px Myriad Arabic;
+    
+    
+}
+.label{
+    
+    font:  54px/56px Myriad Arabic;
+}
+td{
+    font:  24px/26px Myriad Arabic;
+    padding-bottom: 20px;
+    width:30%;
+}
+th{
+    font: Bold 34px/36px Myriad Arabic;
+    padding-right: 100px;
+    text-align: left;
+    padding-top:10px;
+}
+table{
+    margin-left: 8%;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+#resumeTable{
+    overflow-x: auto;
+}
+.experience{
+    color: black;
+    
+    font:  24px/26px Myriad Arabic;
+    text-align: left;
+    float: left;
+    padding: 0;
+}
+.work{
+    margin:0;
+    padding: 0;
+    
+}
 .resumeHead{
-    color:black;
+    color: black;
     font:  104px/104px Myriad Arabic !important;
     text-shadow: none;
-    z-index: -1;    
+    z-index: 0;    
     position: absolute;
 }
 .resumeP{
-    position: static;
+    position: relative;
     padding-top: 4%;
-    margin: 14% 0% 0% 8%;
+    margin: 15% 0% 0% 8%;
+}
+#techStack{
+    margin-top: 6%;
 }

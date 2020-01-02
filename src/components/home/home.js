@@ -6,7 +6,7 @@ class Home extends React.Component{
     render(){
         const welcomeMsg="My name is Damian and I like to do lots of things.";
         const intro="Some things are Web Dev, Mobile Apps, Music, and 3D Art just to name a few. Check out the other tabs to see more of my work!";
-        const about='My focus has been on Web Development using frameworks such as React and Bootstrap to make things like the site you\'re currently looking at.';
+        const about='My focus has been on Web Development using frameworks such as React JS to make things like the site you\'re currently looking at.';
         const aboutMsg='I am always learning and interested in new technologies. I have experimented with various types of projects that you can see here.';
         return(
             <div>
