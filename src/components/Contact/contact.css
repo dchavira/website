@@ -2,6 +2,12 @@ div{
     font-size: 14px;
     display: block;
 }
+p{
+    position: absolute;
+}
+a{
+    color: blue;
+}
 .contactHead{
     color:black;
     font:  104px/104px Myriad Arabic !important;

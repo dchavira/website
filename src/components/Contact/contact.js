@@ -26,45 +26,23 @@ class Contact extends React.Component {
             {messageValue : event.target.value}
         )
     }
+    top={
+        marginTop:"45vh"
+    }
+    link={
+        color:"blue"
+
+    }
     render() {
 
         return (
             <div>
                 
                 <h1 className='contactHead'>Contact </h1>
-                <form>
-                    <br/>
-                    Name
-                    <input
-                        type='text'
-                        name='name'
-                        placeholder="Your Name"
-                        //value={this.nameValue}
-                        onChange ={this.changeNameText}
-                    />
-                    <br/>
-                    Email
-                    <input
-                        type='text'
-                        name='email'
-                        placeholder="something@mail.com"
-                        //value={this.messageValue}
-                        onChange={this.changeEmailText}
-                    />
-                    <br/>
-                    Enter message:
-                    <input
-                        type='text'
-                        name='message'
-                        className="messageBox"
-                        placeholder="Say something!"
-                        //value={this.messageValue}
-                        onChange={this.changeMessageText}
-                        
-                    /><br/>
-                    <button className="submit" onClick="">Send Message</button>
-                    <br/>
-                </form>
+                <p style={this.top}>Email: <a href="" style={this.link}>damianchavira@gmail.com</a></p>
+                <p>Phone: 520-223-7619</p>
+                <p><a href="/linkedIn" style={this.link}>LinkedIn</a></p>
+                <p><a href="/git" style={this.link}>Git</a></p>
             </div>
         );
 

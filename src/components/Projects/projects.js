@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Projects extends React.Component {
     pStyle = {
         position:"static",
-        marginTop:"14%"
+        marginTop:"45vh"
     };
     linkStyle = {
         color: "blue",
