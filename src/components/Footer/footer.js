@@ -13,8 +13,9 @@ class Footer extends React.Component{
                     <li><a href="/linkedIn" target="_blank"><FaLinkedin /></a></li>
                     <li><a href="/contact" target="_blank"><FaEnvelope /></a></li>
                 </ul>
-                &copy; Damian Chavira 2019
-                    
+                <div id="copy">
+                    &copy; Damian Chavira 2019
+                </div>
                 
             </footer>
         );

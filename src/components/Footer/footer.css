@@ -7,6 +7,7 @@ footer{
   text-align: center;
   font:  2.5em/3.375em Myriad Arabic; 
   position: relative;
+  display:block;
   
 }
 
@@ -14,7 +15,9 @@ footer{
     padding-left: 2%;
     float:none;
 }
-
+#copy{
+    font:1.5em/2.375em Myriad Arabic;
+}
 @media screen and (max-width: 767){
 
     .icons{
@@ -27,5 +30,8 @@ footer{
         max-width:2em;
         min-width: 1.5em;
         height: auto;
+    }
+    #copy{
+        font-size: .75em;
     }
 }

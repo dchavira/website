@@ -2,10 +2,7 @@ import React from 'react';
 import './projects.css';
 import { Link } from 'react-router-dom';
 class Projects extends React.Component {
-    pStyle = {
-        position:"static",
-        marginTop:"45vh"
-    };
+    
     linkStyle = {
         color: "blue",
         font: "Bold calc(2vh + 1.5vw)/104px Myriad Arabic",
@@ -34,7 +31,7 @@ class Projects extends React.Component {
         return (
             <div>
                 <h1 className='projectsHead'>Projects </h1>
-                <p style={this.pStyle}>
+                <p className="info">
                     <br />
                     I like to do lots of projects so I can learn a specific skill whether it be for a new programming language, a game, or a Mobile App.
                     Click on one of the links below to see a project.

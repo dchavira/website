@@ -10,6 +10,7 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 import Home from './components/home/home'
 import NavigationBar from './components/navBar/navBar';
+import BalanceVr from './components/Projects/balanceVr';
 
   class App extends React.Component {
     state = {
@@ -44,6 +45,9 @@ import NavigationBar from './components/navBar/navBar';
                 </Route>
                 <Route path="/contact">
                     <Contact />
+                </Route>
+                <Route path="/balanceVr">
+                    <BalanceVr/>
                 </Route>
                 <Route path='/linkedIn' component={() => window.location = ' https://www.linkedin.com/in/damian-chavira-a45886141'}/>
               <Route path='/git' component={() => window.location = 'https://www.github.com/dchavira'}/>
