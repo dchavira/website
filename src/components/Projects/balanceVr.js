@@ -22,7 +22,18 @@ class BalanceVr extends React.Component{
                  As you can see there was still plenty of work to do as the controls would glitch out once loading into the new level and the
                   new level wasn't really a level yet. </p>
                 <div id="iframeContainer">  
-                    <iframe src="https://drive.google.com/file/d/1YHt_FoZ5CP4o3LhcUAyaeWxx7Xbl9AY9/preview" allowFullScreen></iframe>
+                    <iframe  title="BVR Update 1" src="https://drive.google.com/file/d/1YHt_FoZ5CP4o3LhcUAyaeWxx7Xbl9AY9/preview" allowFullScreen></iframe>
+                </div>
+                <p className="info">
+                It's been a couple of weeks since that last video and some major work has been done. Excuse the resolution as it is only a game preview I was playing not the full build. I have added some elements to the level selection screen and made a new song for it.
+                 I added a better river spline, some trees, grass, plants etc. Even a doe! 
+                 Once the first level is loaded, you can see that once a player puts all the items into the balance area, the timer starts. 
+                 Each level will have a different amount of time but the gist of it stays the same. 
+                 All sound effects including the level completed sound effect were made by my beautiful voice. 
+                Once a level is complete the main menu pops up to go to the next level or quit. Time to make more levels!
+                </p>
+                <div id="iframeContainer">  
+                    <iframe  title="BVR Update 2" src="https://drive.google.com/file/d/1CkdtsnQ787t6kRzdA8egCU03YQMLv1WK/preview" allowFullScreen></iframe>
                 </div>
             </div>
         )

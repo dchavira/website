@@ -22,7 +22,8 @@ li{
     
 }
 button{
-    font-size: 30px;
+    font-size: 1em;
+    margin-top: 30px;
     margin-right: 30px;
     color: white;
     background: transparent;
@@ -94,12 +95,25 @@ img{
 }
 @media screen and (max-width: 767){
     button{
-        margin: 3% 5% 0% 0%;
-        padding-bottom: 1%;   
+        
+        padding: 1vh 0% 0% 0%;  
         display: inline;
+    }
+    .clickedButton{
+        background-color: black;
     }
     ul{
         display:none;
+    }
+    .show-nav{
+        display: block;
+        width: 100%;
+        margin: 0;
+        
+    }
+    .mobile{
+        display: block;
+        text-align: center;
     }
     img{
         display: none;

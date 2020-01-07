@@ -7,9 +7,12 @@ class NavigationBar extends React.Component {
     state = {
         toggle: false,
         scrolled: false,
-        onHome:true
+        onHome:true,
+        prevPath:""
     }
-    
+    prevPath = (path) =>{
+        this.setState({prevPath:path})
+    }
     Toggle = () => {
         this.setState({ toggle: !this.state.toggle })
     }
@@ -21,6 +24,7 @@ class NavigationBar extends React.Component {
         this.setState({onHome: !this.state.onHome})
     }
     componentDidMount() {
+        
         window.addEventListener('scroll', this.handleScroll, { passive: true })
         const vJSLoc= window.location.pathname;
         if(vJSLoc!=="/" && this.state.onHome){
@@ -34,6 +38,7 @@ class NavigationBar extends React.Component {
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll)
+        window.scrollTo(0, 0);
     }
 
     handleScroll = event => {
@@ -48,7 +53,6 @@ class NavigationBar extends React.Component {
     }
     
     componentDidUpdate(){
-            
             const currentLoc = this.props.location.pathname;
             
             //if the page is home but leaving it, this is now true and turns on black style
@@ -86,15 +90,15 @@ class NavigationBar extends React.Component {
 
         return (
 
-            <nav  onScroll={this.handleScroll} className={this.state.scrolled||!this.state.onHome ? "scrolled":null}>
+            <nav  onScroll={this.handleScroll} className={(this.state.scrolled||!this.state.onHome)||this.state.toggle ? "scrolled":null}>
                 <Link to="/"><img className="logo" src="./img/Logo Transparent.png" alt="Logo" ></img></Link>
                 <button onClick={this.Toggle}>
                     <FaBars />
                 </button>
-                <ul className={this.state.toggle ? "nav-links show-nav" : "nav-links"}>
+                <ul className={this.state.toggle ? "scrolled show-nav" : "nav-links"}>
                     {
                         li.map((objLink, i) => {
-                            return (<li key={i} ><Link to={objLink.link}>{objLink.text}</Link></li>)
+                            return (<li key={i} className="mobile"><Link to={objLink.link}>{objLink.text}</Link></li>)
                         })
                     }
 
