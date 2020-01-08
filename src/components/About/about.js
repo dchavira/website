@@ -38,7 +38,7 @@ class About extends React.Component {
                         <td></td>
                         <td>Adobe Photoshop/XD</td>
                         <td>React Native</td>
-                        <td></td>
+                        <td>Blender3d</td>
                     </tr>
                     <tr>
                         <th className="label">Experience</th>
