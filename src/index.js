@@ -12,6 +12,7 @@ import Home from './components/home/home'
 import NavigationBar from './components/navBar/navBar';
 import BalanceVr from './components/Projects/balanceVr';
 import Art from './components/Projects/art';
+import JazzChords from './components/Projects/jazzChords';
 
   class App extends React.Component {
     state = {
@@ -53,6 +54,9 @@ import Art from './components/Projects/art';
                 </Route>
                 <Route path="/art">
                     <Art/>
+                </Route>
+                <Route path="/jazzChords">
+                    <JazzChords/>
                 </Route>
                 <Route path='/linkedIn' component={() => window.location = ' https://www.linkedin.com/in/damian-chavira-a45886141'}/>
               <Route path='/git' component={() => window.location = 'https://www.github.com/dchavira'}/>
