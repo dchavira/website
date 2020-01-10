@@ -1,7 +1,9 @@
 import React from 'react';
 import './about.css';
 class About extends React.Component {
-
+    resumeLink={
+        color:"blue"
+    }
     render() {
         
 
@@ -12,7 +14,7 @@ class About extends React.Component {
                     Resume
                 </h1>
                 <p className="resumeP">
-                    Download Resume
+                <a href="./files/Resume Programming (Jan 2020).pdf" style={this.resumeLink} download="resumeDamianChavira">Download Resume</a>
 
                 </p>
                 <div id="resumeTable"><table>
@@ -30,14 +32,14 @@ class About extends React.Component {
                     </tr>
                     <tr>
                         <td></td>
-                        <td>HTML5/CSS3</td>
+                        <td>HTML5/CSS3/JS (ES6)</td>
                         <td>Java</td>
                         <td>C++/Blueprint UE4 Scripting</td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>Adobe Photoshop/XD</td>
-                        <td>React Native</td>
+                        <td></td>
                         <td>Blender3d</td>
                     </tr>
                     <tr>
@@ -53,7 +55,8 @@ class About extends React.Component {
                         <td>
                             <ul className="work">
                                 <li className="experience">Create custom websites for graduating college musicians</li>
-                                <li className="experience">Create Jazz Education Mobile Application</li>
+                                <li className="experience">Created  Jazz Education Mobile Application w/React Native</li>
+                                <li className="experience">Developed a Virtual Reality game (BalanceVR) using Unreal Engine 4</li>
                             </ul>
                         </td>
                         
