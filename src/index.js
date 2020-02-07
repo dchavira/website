@@ -13,7 +13,7 @@ import NavigationBar from './components/navBar/navBar';
 import BalanceVr from './components/Projects/balanceVr';
 import Art from './components/Projects/art';
 import JazzChords from './components/Projects/jazzChords';
-
+import BootNavBar from './components/navBar/bootNavbar';
   class App extends React.Component {
     state = {
       toggle: false
@@ -31,7 +31,7 @@ import JazzChords from './components/Projects/jazzChords';
     
       return (
         <Router>
-            <NavigationBar/>
+            <BootNavBar/>
             
             <Switch>
               {// eslint-disable-next-line
