@@ -12,8 +12,7 @@ a{
     color:black;
     font:  104px/104px Myriad Arabic !important;
     text-shadow: none;
-    z-index: -1;
-    position: absolute;
+    padding-top: 18vh;
 }
 form{
     position:relative;

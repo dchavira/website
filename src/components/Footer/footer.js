@@ -9,12 +9,12 @@ class Footer extends React.Component{
             
             <footer>
                 <ul className="icons">
-                    <li><a href="/git" target="_blank"><FaGithub /></a></li>
-                    <li><a href="/linkedIn" target="_blank"><FaLinkedin /></a></li>
-                    <li><a href="/contact" target="_blank"><FaEnvelope /></a></li>
+                    <li><a href="/git" target="_blank"><FaGithub color="#FFF"/></a></li>
+                    <li><a href="/linkedIn" target="_blank"><FaLinkedin color="#FFF" /></a></li>
+                    <li><a href="/contact" target="_blank"><FaEnvelope color="#FFF"/></a></li>
                 </ul>
                 <div id="copy">
-                    &copy; Damian Chavira 2019
+                    &copy; Damian Chavira 2020
                 </div>
                 
             </footer>

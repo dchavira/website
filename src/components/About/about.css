@@ -63,13 +63,13 @@ table{
     color: black;
     font:  104px/104px Myriad Arabic !important;
     text-shadow: none;
-    z-index: 0;    
-    position: absolute;
+    position: relative;
+    padding-top: 18vh;
 }
 .resumeP{
     position: relative;
     padding-top: 4%;
-    margin: 45vh 0% 0% 8%;
+    margin: 0 0% 0% 8%;
 }
 #techStack{
     margin-top: 6%;
