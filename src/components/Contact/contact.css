@@ -3,16 +3,18 @@ div{
     display: block;
 }
 p{
-    position: absolute;
+    position: relative;
 }
 a{
     color: blue;
 }
 .contactHead{
     color:black;
-    font:  104px/104px Myriad Arabic !important;
+    font:  8.5vw Myriad Arabic !important;
     text-shadow: none;
     padding-top: 18vh;
+    position: relative;
+    margin-bottom: 10%;
 }
 form{
     position:relative;

@@ -24,6 +24,9 @@ import BootNavBar from './components/navBar/bootNavbar';
     fStyle={
       position:"relative"
     }
+    content={
+      minHeight:"calc(100vh-20px)"
+    }
     
     
     render() {

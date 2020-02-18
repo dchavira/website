@@ -23,18 +23,18 @@ h1{
 p{
     color:black;
     font-family: Myriad Arabic !important;
-    font-size:calc(4vh + 1.5vw);
+    font-size: calc(2vh + 1.5vw);
     margin: 0% 0% 0% 8%;
     text-shadow: none;
     display: inline-block;
-    line-height: 10vh;
+    
     position: relative;
     width: 60%;
     height: auto;
 }
 .Message{
     color:black;
-    font: Bold 104px/104px Myriad Arabic !important;
+    font: Bold 8.5vw Myriad Arabic !important;
     margin: 0% 0% 0% 8%;
     padding-top: 1em;
     text-shadow: none;

@@ -25,7 +25,7 @@ dd{
 }
 .label{
     
-    font:  54px/56px Myriad Arabic;
+    font:  4vh Myriad Arabic;
 }
 td{
     font:  24px/26px Myriad Arabic;
@@ -61,15 +61,15 @@ table{
 }
 .resumeHead{
     color: black;
-    font:  104px/104px Myriad Arabic !important;
+    font:  8.5vw Myriad Arabic !important;
     text-shadow: none;
     position: relative;
     padding-top: 18vh;
+    margin-bottom: 10%;
 }
 .resumeP{
     position: relative;
-    padding-top: 4%;
-    margin: 0 0% 0% 8%;
+    margin: 2% 0% 0% 8%;
 }
 #techStack{
     margin-top: 6%;

@@ -5,7 +5,7 @@ div{
 .info{
     
     position:static;
-    margin-top:45vh;
+    
 }
 .infoDetail{
     position: relative;
@@ -30,23 +30,25 @@ div{
 }
 .projectsHead{
     color:black;
-    font:  104px/104px Myriad Arabic !important;
+    font:  8.5vw Myriad Arabic !important;
     text-shadow: none;
     padding-top: 18vh;
+    position: relative;
+    margin-bottom: 2%;
 }
 .projectLink{
     color:blue;
 }
 .projLinks{
-    padding:0;
     
 }
 .projList{
     float: none;
     margin: 0% 0% 0% 8%;
     position:static;
-    padding:0% 0% 0% 0%;
-    width:60%;
+    overflow: hidden;
+    padding: 0;
+    display: inline-block;
     
 }
 h2{
@@ -79,7 +81,6 @@ iframe{
         margin: 0% 0% 0% 8%;
         position:relative;
         padding:0% 0% 0% 0%;
-        width:37%;
     }
     .projLinks{
         padding:"0";

@@ -39,7 +39,7 @@ class Contact extends React.Component {
             <div>
                 
                 <h1 className='contactHead'>Contact </h1>
-                <p style={this.top}>Email: <a href="malito@damianchavira@gmail.com" style={this.link}>damianchavira@gmail.com</a></p>
+                <p >Email: <a href="malito@damianchavira@gmail.com" style={this.link}>damianchavira@gmail.com</a></p>
                 <p>Phone: 520-223-7619</p>
                 <p><a href="/linkedIn" style={this.link}>LinkedIn</a></p>
                 <p><a href="/git" style={this.link}>Git</a></p>

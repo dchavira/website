@@ -39,7 +39,7 @@ class About extends React.Component {
                     <tr>
                         <td></td>
                         <td>Adobe Photoshop/XD</td>
-                        <td></td>
+                        <td>React Native (Expo)</td>
                         <td>Blender3d</td>
                     </tr>
                     <tr>

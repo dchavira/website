@@ -5,7 +5,11 @@ class Projects extends React.Component {
     
     linkStyle = {
         color: "blue",
-        font: "Bold calc(2vh + 1.5vw)/104px Myriad Arabic",
+        font: "Bold calc(2vh + 1.5vw) Myriad Arabic",
+    }
+    listStyle = {
+        paddingRight:'2vw',
+        paddingLeft:0
     }
 
 
@@ -40,10 +44,12 @@ class Projects extends React.Component {
                     {
                         li.map((objLink, i) => {
                             return (
-                            <li key={i} className="projLink">
+                            <li key={i} style={this.listStyle}>
                                 <Link to={objLink.link} style={this.linkStyle}>
                                     {objLink.text}
                                 </Link>
+                                
+                                
                             </li>)
                         })
                     }

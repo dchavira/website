@@ -50,7 +50,7 @@ class BootNavbar extends React.Component {
         console.log(this.state.scrolled)
     }
     img={
-        width:'4em',
+        width:'4vw',
         height:'auto'
     }
     render() {
@@ -58,7 +58,7 @@ class BootNavbar extends React.Component {
         return (
             <div>
                 <Navbar expand="lg" fixed="top" className={(this.state.scrolled||this.state.notHome ? "scrolled":"navbar")}>
-                    <Navbar.Brand href="#home"><img src="./img/Logo Transparent.png" alt="logo" style={this.img}></img></Navbar.Brand>
+                    <Navbar.Brand href="/home"><img src="./img/Logo Transparent.png" alt="logo" style={this.img}></img></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" className="buttons" onClick={this.toggleScroll} />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ml-auto" >
