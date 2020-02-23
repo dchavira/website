@@ -1,3 +1,20 @@
+## Hello!
+Thank you for checking out my repo for my website!
+This is my first React JS project and has been the most difficult yet rewarding experience so far.
+
+I will be updating this ReadMe as often as possible. Thanks for checking it out!
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
